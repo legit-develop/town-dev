@@ -29,3 +29,7 @@ body {
   padding: 0 40px;
   border-radius: 5px;
 }
+
+.meaning-container {
+  display: none;
+}
