@@ -7,3 +7,11 @@ body {
   min-height: 100vh;
   background: #bad7e9;
 }
+
+.container {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 28px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
