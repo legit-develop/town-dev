@@ -39,3 +39,17 @@ body {
   background: gray;
   cursor: not-allowed;
 }
+
+.anime-name {
+  margin: 20px;
+  background: #61876e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.anime-container {
+  display: none;
+}
