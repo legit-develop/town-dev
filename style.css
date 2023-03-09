@@ -5,4 +5,11 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
+  background: #2e4f4f;
+}
+
+.anime-img {
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #61876e;
 }
