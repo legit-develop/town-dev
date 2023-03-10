@@ -34,3 +34,8 @@ body {
   color: #00425a;
   font-weight: 700;
 }
+
+.btn:hover {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+  filter: grayscale(0);
+}
