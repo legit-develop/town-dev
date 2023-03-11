@@ -31,3 +31,18 @@ body {
 .heading {
   font-size: 32px;
 }
+
+.input {
+  width: 220px;
+  padding: 5px;
+  float: right;
+  outline: none;
+  background: lightgray;
+  border-radius: rgba(255, 255, 255, 0.2);
+  font-size: 17px;
+  color: #13005a;
+}
+
+.input::placeholder {
+  color: darkgray;
+}
