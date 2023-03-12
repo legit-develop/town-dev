@@ -1,28 +1,23 @@
-const celsiusEl = document.getElementById("celsius");
-const fahrenheitEl = document.getElementById("fahrenheit");
-const kelvinEl = document.getElementById("kelvin");
+const btnEl = document.getElementById("btn");
+const bmiInputEl = document.getElementById("bmi-result");
+const weightConditionEl = document.getElementById("weight-condition");
 
-function computeTemp(event) {
-  console.log(event.target.name);
-  console.log(event.target.value);
+function calculateBMI(event) {
+  const heightValue = document.getElementById("height").value / 100;
+  const weightValue = document.getElementById("weight").value;
 
-  const currentValue = +event.target.value;
-  console.log(currentValue, typeof currentValue);
+  const bmiValue = Math.floor(weightValue / (heightValue * heightValue));
+  bmiInputEl.value = bmiValue;
 
-  switch (event.target.name) {
-    case "celsius":
-      kelvinEl.value = currentValue + 273.32;
-      fahrenheit.value = currentValue * 1.8 + 32;
-      break;
-    case "fahrenheit":
-      celsiusEl.value = (currentValue - 32) / 1.8;
-      kelvinEl.value = (currentValue - 32) / 1.8 + 273.32;
-      break;
-    case "kelvin":
-      celsiusEl.value = currentValue - 273.32;
-      fahrenheitEl.value = (currentValue - 273.32) * 1.8 + 32;
-      break;
-    default:
-      break;
+  if (bmiValue < 18.5) {
+    weightConditionEl.innerText = "under weight";
+  } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
+    weightConditionEl.innerText = "normal weight";
+  } else if (bmiValue >= 25 && bmiValue <= 29.9) {
+    weightConditionEl.innerText = "over weight";
+  } else if (bmiValue >= 30) {
+    weightConditionEl.innerText = "obesity";
   }
 }
+
+btnEl.addEventListener("click", calculateBMI);
