@@ -9,28 +9,19 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="heading">Body Mass Index (MBI)</h1>
-      <label for="height" class="text">Your Height (cm)</label>
-      <input
-        type="number"
-        class="input"
-        id="height"
-        value="180"
-        placeholder="Enter your height in cm"
-      />
-      <label for="weight" class="text">Your weight in (kg)</label>
-      <input
-        type="number"
-        class="input"
-        id="weight"
-        value="65"
-        placeholder="Enter your weight in (kg)"
-      />
-      <button class="btn" id="btn">Calculate BMI</button>
-      <input disabled type="text" class="input" id="bmi-result" />
-      <h4 class="info-text">
-        weight Condition <span id="weight-condition"></span>
-      </h4>
+      <h1 class="heading">Weight Converter</h1>
+      <div class="input-container">
+        <label for="pounds">Pounds:</label>
+        <input
+          type="number"
+          class="input"
+          id="input"
+          step="0.1"
+          placeholder="Enter a number"
+        />
+      </div>
+      <p>Your weight in Kg <is:span id="result"></is:span></p>
+      <p class="error" id="error">Error:</p>
     </div>
 
     <script src="index.js"></script>
