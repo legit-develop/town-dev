@@ -1,23 +1,26 @@
-const btnEl = document.getElementById("btn");
-const bmiInputEl = document.getElementById("bmi-result");
-const weightConditionEl = document.getElementById("weight-condition");
+const inputEl = document.getElementById("input");
+const errorEl = document.getElementById("error");
+const resultEl = document.getElementById("result");
 
-function calculateBMI(event) {
-  const heightValue = document.getElementById("height").value / 100;
-  const weightValue = document.getElementById("weight").value;
+let errorTime;
+let resultTime;
 
-  const bmiValue = Math.floor(weightValue / (heightValue * heightValue));
-  bmiInputEl.value = bmiValue;
-
-  if (bmiValue < 18.5) {
-    weightConditionEl.innerText = "under weight";
-  } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
-    weightConditionEl.innerText = "normal weight";
-  } else if (bmiValue >= 25 && bmiValue <= 29.9) {
-    weightConditionEl.innerText = "over weight";
-  } else if (bmiValue >= 30) {
-    weightConditionEl.innerText = "obesity";
+function updateResult() {
+  if (inputEl.value <= 0 || isNaN(inputEl.value)) {
+    errorEl.innerText = `${inputEl.value} is invalid input`;
+    clearTimeout(errorTime);
+    errorTime = setTimeout(() => {
+      errorEl.innerText = " ";
+      inputEl.value = "";
+    }, 2000);
+  } else {
+    resultEl.innerText = (+inputEl.value / 2.2).toFixed(1);
+    clearTimeout(resultTime);
+    resultTime = setTimeout(() => {
+      resultEl.innerText = "";
+      inputEl.value = "";
+    }, 1000);
   }
 }
 
-btnEl.addEventListener("click", calculateBMI);
+inputEl.addEventListener("input", updateResult);
