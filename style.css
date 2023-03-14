@@ -28,3 +28,12 @@ input {
   font-weight: 600;
   font-size: 18px;
 }
+
+.text {
+  font-weight: 700;
+}
+
+#bank-profit {
+  color: red;
+  font-weight: 800;
+}
