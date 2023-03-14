@@ -1,54 +1,9 @@
 body {
+  background: rgb(250, 220, 165);
+  margin: 0;
+  padding: 0;
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  background: lightgoldenrodyellow;
-}
-
-.container {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  width: 85%;
-  max-width: 450px;
-}
-
-.heading {
-  font-size: 35px;
-}
-
-.input-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-label {
-  font-size: 20px;
-}
-
-.input {
-  padding: 12px;
-  width: 70%;
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
-  font-size: 17px;
-  border-radius: 10px;
-  outline: none;
-  color: #243763;
-  font-weight: 600;
-}
-
-p {
-  font-size: 18px;
-}
-
-.error {
-  color: #e0144c;
 }
