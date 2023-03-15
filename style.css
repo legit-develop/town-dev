@@ -7,3 +7,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.currency-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
