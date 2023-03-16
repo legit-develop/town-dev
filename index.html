@@ -9,35 +9,37 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="heading">Currency Converter</h1>
-      <div class="currency-converter">
-        <select name="" id="currency-converter">
-          <option value="AUD">AUD</option>
-          <option value="CAD">CAD</option>
+      <h1 class="heading">Loan Calculator</h1>
+      <div class="currency-container">
+        <select id="base-currency" class="base-currency">
           <option value="EUR">EUR</option>
-          <option value="GBP">GBP</option>
-          <option value="INR">JPY</option>
-          <option value="USD" selected>USD</option>
           <option value="ZAR">ZAR</option>
+          <option value="GBP">GBP</option>
+          <option value="USD" selected>USD</option>
         </select>
-        <input type="number" min="0" value id="worth-first" />
+        <input
+          type="number"
+          class="base-input"
+          id="base-input"
+          placeholder="Enter amount"
+          onchange="calculatedLoad()"
+        />
       </div>
       <div class="currency-container">
-        <select name="" id="currency-second">
-          <option value="AUD">AUD</option>
-          <option value="CAD">CAD</option>
-          <option value="EUR">EUR</option>
-          <option value="GBP">GBP</option>
-          <option value="INR">INR</option>
-          <option value="JPY">JPY</option>
+        <select id="calculated-currency" class="calculated-currency">
           <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
           <option value="ZAR" selected>ZAR</option>
+          <option value="EUR">EUR</option>
         </select>
-        <input type="number" id="worth-second" disabled />
+        <input
+          type="number"
+          class="base-input"
+          id="calculated-input"
+          disabled
+        />
       </div>
-      <p class="exchange-rate" id="exchange-rate">1 USD = 138.58</p>
     </div>
-
     <script src="index.js"></script>
   </body>
 </html>
