@@ -8,39 +8,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="heading">Loan Calculator</h1>
-      <div class="currency-container">
-        <select id="base-currency" class="base-currency">
-          <option value="EUR">EUR</option>
-          <option value="ZAR">ZAR</option>
-          <option value="GBP">GBP</option>
-          <option value="USD" selected>USD</option>
-        </select>
-        <input
-          type="number"
-          class="base-input"
-          id="base-input"
-          placeholder="Enter amount"
-          onchange="calculatedLoad()"
-        />
-      </div>
-      <div class="currency-container">
-        <select id="calculated-currency" class="calculated-currency">
-          <option value="USD">USD</option>
-          <option value="GBP">GBP</option>
-          <option value="ZAR" selected>ZAR</option>
-          <option value="EUR">EUR</option>
-        </select>
-        <input
-          type="number"
-          class="base-input"
-          id="calculated-input"
-          disabled
-        />
-      </div>
-      <p class="text" id="text">1 ZAR is 17.22 USD</p>
-    </div>
+    <input type="checkbox" id="dark-mode" class="input" />
+    <label for="dark-mode" class="label">
+      <div class="circle"></div>
+    </label>
     <script src="index.js"></script>
   </body>
 </html>
