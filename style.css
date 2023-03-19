@@ -48,3 +48,12 @@ body {
     transform: translateX(4px);
   }
 }
+
+@keyframes toggleOff {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
