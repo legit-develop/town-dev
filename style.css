@@ -7,3 +7,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+img {
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  z-index: 2;
+}
