@@ -16,3 +16,12 @@ img {
   top: 60px;
   z-index: 2;
 }
+
+.clock {
+  background: #fff;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
