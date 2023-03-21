@@ -25,3 +25,10 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
 }
+
+.numbers div {
+  position: absolute;
+  font-size: 27px;
+  font-weight: bold;
+  color: rgb(247, 247, 150);
+}
