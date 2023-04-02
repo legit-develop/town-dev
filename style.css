@@ -27,3 +27,16 @@ body {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 40px;
+  color: #000;
+  font-family: cursive;
+  font-size: 24px;
+}
