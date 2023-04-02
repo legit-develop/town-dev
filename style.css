@@ -1,98 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  background: lightgray;
+}
+
+.top-container {
+  background: url("./media/soweto.jpg");
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-img {
-  width: 90px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60px;
-  z-index: 2;
+.text {
+  margin: 50px 5%;
+  font-family: sans-serif;
 }
 
-.clock {
+.navbar {
+  display: flex;
+  position: fixed;
   background: #fff;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-.numbers div {
-  position: absolute;
-  font-size: 27px;
-  font-weight: bold;
-  color: rgb(7, 3, 68);
-}
-
-.twelve {
-  top: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.three {
-  right: 6px;
-  top: 50%;
-  transform: translateX(-50%);
-}
-
-.nine {
-  left: 6px;
-  top: 50%;
-  transform: translateX(-50%);
-}
-
-.six {
-  bottom: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.arrows {
-  display: flex;
   width: 100%;
-  height: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.arrows::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background: #000;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 4;
-}
-
-.arrows div {
-  background: #d2daff;
-  width: 7px;
-  position: absolute;
-  height: 120px;
-  transform-origin: bottom center;
-  bottom: 50%;
-  z-index: 3;
-  border-radius: 50% 50% 0 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.arrows .hour {
-  height: 80px;
-  transform: rotate(30deg);
-}
-
-.arrows .second {
-  transform: rotate(250deg);
-  background-color: rgb(247, 247, 150);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
